@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;600&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: "Advent Pro", sans-serif;
+  transition: .3s ease;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* //colors and default size*/
+:root{
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(185,92%,41%);
+  --secondaryColor: rgb(150,162,188);
+  --paragraphColor: rgb(127,127,175);
+  --BgColor: #031a30;
+  --formColor: rgb(2,15,29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight:3rem;
+}
+/* Default css setup */
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration:none;
+}
+li{
+  list-style: none;
+}
+.flex{
+  display:flex;
+  align-content: center;
+}
+.grid{
+  display:grid;
+  align-content: center;
+}
+input, textarea{
+  font-size:100%;
+}
+.section{
+  padding:4rem 0 2rem;
+}
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+img{
+  height:auto;
+  width:100%;
+}
+.icon{
+  font-size:25px;
+  cursor: pointer;
+}
+.btn{
+  border: 2px solid var(--primaryHover);
+  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+  position:relative;
+  color: var(--primaryColor);
+  background: transparent;
+}
+.btn::before{
+  content: '';
+  height:100%;
+  width:0%;
+  background:var(--primaryColor);
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  transition: .2s;
+
+}
+.btn::after{
+  content: '';
+  height:100%;
+  width:0%;
+  background:var(--BgColor);
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  transition: .5s;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn:hover::before, .btn:hover::after{
+  width:100%;
+}
+.navLink{
+  position: relative;
+}
+.navLink::before{
+  content: '';
+  position: absolute;
+  background: var(--primaryHover);
+  height: 2px;
+  width:0%;
+  bottom:-3px;
+  left:0;
+  transition: 0.3s;
+}
+.navLink::after{
+  content: '';
+  position: absolute;
+  background: var(--projectCardColor);
+  height: 2px;
+  width:0%;
+  bottom:-3px;
+  left:0;
+  transition: 0.8s;
+}
+.sectionTitle{
+  padding:1rem 0;
+  font-size:2rem;
+  color:var(--textColor);
+  display:flex;
+  align-content: center;
+
+}
+.titleNumber{
+  color: var(--primaryColor);
+  margin:0 0.6rem;
+  font-weight: 600;
+}
+.titleText{
+  position: relative;
+  width:max-content;
+}
+.underline{
+  position:absolute;
+  width:100%;
+  height:3px;
+  top:35px;
+  border-radius:10px;
+  background: var(--secondaryColor);
+  overflow: hidden;
+}
+.underline span{
+  top:0;
+  left:10px;
+  width:10px;
+  border-radius: 10px;
+  position:absolute;
+  background: var(--textColor);
+  animation: moveLine 2s linear infinite;
+
+}
+@keyframes moveLine {
+   0%{
+    left: -20px;
+   }
+   100%{
+    left:100px;
+   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background: var(--BgColor);
+  color:white;
 }

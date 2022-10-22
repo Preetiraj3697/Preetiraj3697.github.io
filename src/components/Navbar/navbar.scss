@@ -1,0 +1,95 @@
+:root{
+    --primaryColor: #00eaff;
+    --primaryHover: hsl(185,92%,41%);
+    --secondaryColor: rgb(150,162,188);
+    --paragraphColor: rgb(127,127,175);
+    --BgColor: #031a30;
+    --formColor: rgb(2,15,29);
+    --projectCardColor: #072340;
+    --textColor: #dae4fb;
+    --headerHeight:3rem;
+  }
+  .header{
+    position:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    height: var(--headerHeight);
+    padding: 2rem;
+    z-index: 1000;
+    // background: var(--projectCardColor);
+  
+  .logo a{
+    color: var(--textColor);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 768px){
+    .navBar{
+        background: var(--projectCardColor);
+        position:absolute;
+        height: max-content;
+        width:80%;
+        border-radius: 1rem;
+        padding:1rem;
+        top:-100rem;
+        left: 50%;
+        transform:translate(-50%);
+        box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+        z-index:1000;
+
+        .navLists{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            flex-direction:column;
+            width:100%;
+            margin:auto;
+            padding:1rem 0;
+
+            .navItem{
+                padding:1rem 0;
+                .navLink{
+                    color:var(--textColor);
+                    font-size:1.2rem;
+                    font-weight: 600;
+                    &:hover{
+                        color:var(--primaryColor)
+                    }
+                    .headerNumber{
+                      color:var(--primaryHover)
+                    }
+
+                }
+            }
+            .btn{
+              margin-top: 1rem;
+              a{
+                color: var(--textColor)
+              }
+            }
+        }
+        .closeNavBar{
+          position: absolute;
+          top:1rem;
+          right:1.5rem;
+
+          &:hover{
+            .icon{
+              color:var(--primaryColor)
+            }
+          }
+        }
+    }
+    .activeNavbar{
+        top:6rem;
+    }
+    
+  }
+}
+
+.activeHeader{
+  background-color: var(--projectCardColor);
+  box-shadow: 0 2px 4px rgba(2,15,29,0.904)
+}

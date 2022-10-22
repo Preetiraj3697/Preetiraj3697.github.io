@@ -1,0 +1,85 @@
+:root {
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(185,92%,41%);
+  --secondaryColor: rgb(150,162,188);
+  --paragraphColor: rgb(127,127,175);
+  --BgColor: #031a30;
+  --formColor: rgb(2,15,29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight:3rem;
+}
+
+.about .sectionContent .textSection h4 {
+  color: var(--secondaryColor);
+  font-size: 1.3rem;
+  max-width: 100%;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: auto;
+}
+.about .sectionContent .textSection .aboutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background: var(--primaryColor);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 15px;
+}
+.about .sectionContent .textSection .aboutBtn:hover {
+  background: var(--primaryColor);
+}
+.about .sectionContent .textSection .aboutBtn a {
+  color: var(--projectCardColor);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.about .sectionContent .textSection .aboutBtn a:hover {
+  color: var(--textColor);
+}
+.about .sectionContent .aboutImgDiv {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 2rem auto 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  border: 2px dashed var(--primaryColor);
+}
+.about .sectionContent .aboutImgDiv .aboutImg {
+  width: 247px;
+  height: 247px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+.about .sectionContent .aboutImgDiv::before {
+  content: "Hover Me";
+  font-size: 1.6rem;
+  color: var(--BgColor);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inconsolate", monospace;
+  justify-content: center;
+  align-items: center;
+  background: var(--primaryColor);
+  mix-blend-mode: screen;
+  height: 97%;
+  width: 97%;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.about .sectionContent .aboutImgDiv:hover.aboutImgDiv::before {
+  height: 0%;
+}/*# sourceMappingURL=about.css.map */
