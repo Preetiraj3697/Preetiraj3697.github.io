@@ -60,26 +60,25 @@
   align-items: center;
   justify-content: center;
 }
-.about .sectionContent .aboutImgDiv::before {
-  content: "Hover Me";
-  font-size: 1.6rem;
-  color: var(--BgColor);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Inconsolate", monospace;
-  justify-content: center;
-  align-items: center;
-  background: var(--primaryColor);
-  mix-blend-mode: screen;
-  height: 97%;
-  width: 97%;
-  position: absolute;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: all 0.3s;
-}
 .about .sectionContent .aboutImgDiv:hover.aboutImgDiv::before {
   height: 0%;
+}
+
+@media screen and (min-width: 769px) {
+  .about {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  .about .sectionContent {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .about .sectionContent .textSection h4 {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=about.css.map */

@@ -39,13 +39,13 @@ const Skills = () => {
           <div className="iconBox flex">
             <SiTailwindcss className='icon' />
           </div>
-          <span className="skillName">TailwindCss</span>
+          <span className="skillName">Tailwind</span>
         </div>
         <div className="singleSkills">
           <div className="iconBox flex">
             <SiStyledcomponents className='icon' />
           </div>
-          <span className="skillName">Styled Components</span>
+          <span className="skillName">StyledC.</span>
         </div>
         <div className="singleSkills">
           <div className="iconBox flex">

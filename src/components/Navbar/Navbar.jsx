@@ -31,19 +31,19 @@ const Navbar = () => {
      <div className={active}>
         <ul onClick={removeNavBar} className="navLists">
             <li className="navItem">
-                <a href="#about" className="navLink"><span className='headerNumber'>1.</span> About</a>
+                <a href="#about" className="navLink"><span className='headerNumber'></span> About</a>
             </li>
             <li className="navItem">
-                <a href="#skills" className="navLink"><span className='headerNumber'>2.</span> Skills</a>
+                <a href="#skills" className="navLink"><span className='headerNumber'></span> Skills</a>
             </li>
             <li className="navItem">
-                <a href="#projects" className="navLink"><span className='headerNumber'>3.</span> Projects</a>
+                <a href="#projects" className="navLink"><span className='headerNumber'></span> Projects</a>
             </li>
             <li className="navItem">
-                <a href="#contact" className="navLink"><span className='headerNumber'>4.</span> Contact</a>
+                <a href="#contact" className="navLink"><span className='headerNumber'></span> Contact</a>
             </li>
             <button className='btn'>
-             <a href=''>Resume</a>
+             <a href='doc.pdf' download='doc.pdf'>Resume</a>
             </button>
         </ul>
         <div onClick={removeNavBar} className="closeNavBar">

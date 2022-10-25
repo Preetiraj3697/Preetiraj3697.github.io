@@ -7,20 +7,20 @@ const Home = () => {
   return (
     <section id="home" className='home section'>
       {/* this div weill be only visible at wider screen */}
-      {/* <div className="leftIcons">
+      <div className="leftIcons">
         <div className="socials grid">
-          <a href="" target="_blank">
+          <a href="https://github.com/Preetiraj3697" target="_blank">
           <AiFillGithub className='icon'/>
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/preetiraj3697/" target="_blank">
           <AiFillLinkedin className='icon'/>
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.instagram.com/paarthavshah3697/" target="_blank">
           <AiFillInstagram className='icon'/>
           </a>
           <div className='line'></div>
         </div>
-      </div> */}
+      </div>
       {/* HomeContent */}
       <div className="container homeContainer">
         <span className="introText">
@@ -51,14 +51,14 @@ const Home = () => {
       </div>
       {/* right div with email address (will also be visible) at wider screen*/}
      
-     {/* <div className="rightEmail">
+     <div className="rightEmail">
       <div>
         <div className="emailAddress">
           <a href='https://mailto:preetiraj122000@gmail.com' target="_blank">Preetiraj122000@gmail.com</a>
         </div>
         <div className="line"></div>
       </div>
-     </div> */}
+     </div>
   </section>
   )
 }

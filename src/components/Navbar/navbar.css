@@ -86,4 +86,47 @@
 .activeHeader {
   background-color: var(--projectCardColor);
   box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+}
+
+@media screen and (min-width: 760px) {
+  .toggleNavBar, .closeNavBar {
+    display: none;
+  }
+  .header {
+    padding: 2.5rem 2rem;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+  .header .navBar .navItem {
+    padding: 0 1rem;
+  }
+  .header .navBar .navItem .navLink {
+    color: var(--textColor);
+    font-size: 1.2rem;
+  }
+  .header .navBar .navItem .navLink:hover {
+    color: var(--primaryColor);
+  }
+  .header .navBar .btn {
+    margin-left: 1rem;
+  }
+  .header .navBar .btn a {
+    color: var(--primaryColor);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header {
+    padding: 2.5rem 5rem;
+  }
+  .header .navBar .navLists {
+    padding: 0 2rem;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0 2rem;
+  }
 }/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,147 @@
+:root{
+    --primaryColor: #00eaff;
+    --primaryHover: hsl(185,92%,41%);
+    --secondaryColor: rgb(150,162,188);
+    --paragraphColor: rgb(127,127,175);
+    --BgColor: #031a30;
+    --formColor: rgb(2,15,29);
+    --projectCardColor: #072340;
+    --textColor: #dae4fb;
+    --headerHeight:3rem;
+  }
+  .contact{
+    .contactContainer{
+        width:100%;
+        justify-content: center;
+        align-items: flex-start;
+        gap:2rem;
+        .socialContacts{
+            justify-content: center;
+            h3{
+                color:var(--secondaryColor);
+                padding:1rem 0;
+                text-align: center;
+            }
+           .cards{
+            gap:1rem;
+            align-items: center;
+            justify-content: center;
+            .card{
+                display:grid;
+                align-items: center;
+                row-gap:10px;
+                padding:1.5rem;
+                width:240px;
+                background: var(--projectCardColor);
+                border-radius: 10px;
+                text-align: center;
+                .icon{
+                 color:var(--primaryColor)
+                }
+                h4{
+                    color:var(--textColor);
+                    font-size: 10px;
+                }
+                .userName{
+                    color:var(--secondaryColor);
+                    font-weight: 600;
+                }
+                a{
+                    justify-content: center;
+                    gap:5px;
+                    color:var(--primaryColor);
+                    font-weight: 600;
+                    cursor: pointer;
+                    .icon{
+                        font-size:20px;
+                    }
+                    &:hover{
+                        color:var(--primaryColor);
+                        .icon{
+                            transform: translateX(10px);
+                        }
+                        
+                    }
+                }
+            }
+           }
+        }
+        .form{
+            width:100%;
+            justify-content: center;
+            margin:auto;
+            h3{
+                text-align: center;
+                color: var(--secondaryColor);
+            }
+            form{
+                width:100%;
+                text-align: center;
+                input,textarea{
+                    height:1rem;
+                    width:90%;
+                    padding:1.5rem .5rem;
+                    border-radius: 10px;
+                    background: none;
+                    border:2px solid var(--secondaryColor);
+                    margin:.5rem 0;
+                    outline:none;
+                    color: var(--textColor);
+                    font-weight: 600;
+                    &::placeholder{
+                        color:var(--secondaryColor);
+                        opacity: .5;
+                    }
+                }
+                textarea{
+                    height:150px;
+                }
+                .formBtn{
+                    display:block;
+                    margin:auto;
+                    width:90%;
+                    padding:1rem 0;
+                    border-radius: 10px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    background: var(--primaryColor);
+                    color:var(--BgColor);
+                    font-weight: 600;
+                    cursor: pointer;
+                    &:hover{
+                        background: var(--primaryHover);
+                    }
+                }
+            }
+        }
+    }
+  }
+
+  @media screen and (min-width:640px){
+    .cards{
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media screen and (min-width:960px){
+    .contact{
+        .contactContainer{
+            grid-template-columns: repeat(2,1fr);
+            align-items: flex-start !important;
+        }
+    }
+  }
+  @media screen and (min-width:1150px){
+    .contact{
+        .contactContainer{
+            grid-template-columns: repeat(2,1fr);
+            align-items: flex-start !important;
+        }
+    }
+  }
+  @media screen and (min-width:1240px){
+    .contact{
+       padding-left: 2rem;
+       padding-right: 2rem;
+    }
+  }

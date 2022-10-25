@@ -55,6 +55,7 @@ img{
 }
 .icon{
   font-size:25px;
+  color:var(--primaryColor);
   cursor: pointer;
 }
 .btn{
@@ -149,10 +150,10 @@ img{
   border-radius: 10px;
   position:absolute;
   background: var(--textColor);
-  animation: moveLine 2s linear infinite;
+  animation: move 2s linear infinite;
 
 }
-@keyframes moveLine {
+@keyframes move {
    0%{
     left: -20px;
    }
@@ -164,4 +165,41 @@ img{
 body{
   background: var(--BgColor);
   color:white;
+}
+::selection{
+  background-color: var(--primaryColor);
+  color: white;
+}
+::-webkit-scrollbar{
+  width:10px;
+  background: var(--projectCardColor);
+}
+::-webkit-scrollbar-thumb{
+background: var(--primaryHover);
+border-radius: 10px;
+}
+@media screen and (min-width:769px) {
+  .container{
+    width:70%;
+    margin:auto;
+  }
+}
+@media screen and (min-width:960px) {
+  .section{
+    padding:6rem 0 4rem
+  }
+}
+@media screen and (min-width:1240px) {
+  .section{
+    padding:6rem 0 4rem
+  }
+  .container{
+    width:70%;
+    margin:auto;
+  }
+}
+@media screen and (min-width:1440px) {
+  body{
+    zoom:1.7rem;
+  }
 }

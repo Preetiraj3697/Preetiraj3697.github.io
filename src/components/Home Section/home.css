@@ -106,4 +106,103 @@
   100% {
     transform: translateY(5px);
   }
+}
+.home .leftIcons, .home .rightEmail {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .home .homeContainer {
+    padding: 5rem 1.5rem;
+  }
+  .home .homeContainer .introText {
+    font-size: 1.5rem;
+  }
+  .home .homeContainer .title {
+    font-size: 3.5rem;
+  }
+  .home .homeContainer .subTitle {
+    font-size: 2.1rem;
+  }
+  .home .homeContainer .homeParagraph {
+    font-size: 1.5rem;
+  }
+  .home .homeContainer .lowerHomeSection .contactBtn {
+    padding: 0.8rem 1.5rem;
+  }
+  .home .homeContainer .lowerHomeSection .contactBtn a {
+    font-size: 22px;
+  }
+  .home .homeContainer .scrollDiv {
+    padding-top: 1.5rem;
+  }
+  .home .homeContainer .scrollDiv .icon {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .home .homeContainer {
+    padding: 5rem 1.5rem;
+    width: 70%;
+    margin: auto;
+  }
+  .home .leftIcons, .home .rightEmail {
+    display: block;
+    position: fixed;
+  }
+  .home .leftIcons .icon, .home .rightEmail .icon {
+    color: var(--secondaryColor);
+  }
+  .home .leftIcons a, .home .rightEmail a {
+    font-weight: 600;
+    color: var(--secondaryColor);
+  }
+  .home .leftIcons .line, .home .rightEmail .line {
+    margin: auto;
+    content: "";
+    background: var(--secondaryColor);
+    height: 100px;
+    width: 1px;
+  }
+  .home .leftIcons {
+    left: 5%;
+    bottom: 0;
+  }
+  .home .leftIcons .socials {
+    gap: 1rem;
+  }
+  .home .leftIcons .socials a {
+    color: var(--textColor);
+  }
+  .home .leftIcons .socials a:hover {
+    color: var(--primaryColor);
+  }
+  .home .rightEmail {
+    right: 0;
+    bottom: 0;
+  }
+  .home .rightEmail .emailAddress {
+    transform: rotate(90deg) translate(-90px, 0px);
+  }
+  .home .rightEmail .emailAddress a {
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home .homeContainer {
+    padding: 6rem;
+  }
+  .home .homeContainer .introText {
+    font-size: 1.5rem;
+  }
+  .home .homeContainer .title {
+    font-size: 5rem;
+  }
+  .home .homeContainer .subTitle {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+  }
+  .home .homeContainer .homeParagraph {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=home.css.map */

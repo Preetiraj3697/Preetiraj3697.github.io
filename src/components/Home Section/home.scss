@@ -92,4 +92,111 @@
             }
         }
     }
+    .leftIcons, .rightEmail{
+        display:none;
+    }
+  }
+  @media screen and (min-width:480px) {
+    .home{
+       .homeContainer{
+        padding:5rem 1.5rem;
+        .introText{
+            font-size:1.5rem;
+        }
+        .title{
+            font-size:3.5rem;
+        }
+        .subTitle{
+            font-size:2.1rem;
+        }
+        .homeParagraph{
+            font-size: 1.5rem;
+        }
+        .lowerHomeSection{
+            .contactBtn{
+                padding: .8rem 1.5rem;
+                a{
+                    font-size:22px;
+                }
+            }
+        }
+        .scrollDiv{
+            padding-top: 1.5rem;
+            .icon{
+                font-size: 1.5rem;
+            }
+        }
+       } 
+    }
+  }
+  @media screen and (min-width:770px) {
+    .home{
+       .homeContainer{
+        padding:5rem 1.5rem;
+        width:70%;
+        margin:auto;
+       }
+       .leftIcons, .rightEmail{
+        display:block;
+        position: fixed;
+        .icon{
+            color: var(--secondaryColor);
+        }
+        a{
+            font-weight: 600;
+            color: var(--secondaryColor);
+        }
+        .line{
+            margin:auto;
+            content:'';
+            background: var(--secondaryColor);
+            height:100px;
+            width:1px;
+        }
+       }
+       .leftIcons{
+        left:5%;
+        bottom:0;
+        .socials{
+            gap:1rem;
+             a{
+                color:var(--textColor);
+                &:hover{
+                    color:var(--primaryColor);
+                }
+             }
+            
+        }
+       }
+       .rightEmail{
+        right:0;
+        bottom:0;
+        .emailAddress{
+            transform: rotate(90deg) translate(-90px, 0px);
+            a{
+                letter-spacing: 1px;
+            }
+        }
+       }
+    }
+  }
+  @media screen and (min-width: 1240px) {
+    .home{
+        .homeContainer{
+            padding:6rem;
+            .introText{
+                font-size:1.5rem;
+            }
+            .title{
+                font-size:5rem;
+            }
+            .subTitle{
+                font-size:2.4rem;
+                line-height: 2.5rem;
+            }
+            .homeParagraph{
+                font-size: 1.5rem;
+            }
+        }
+    }
   }
