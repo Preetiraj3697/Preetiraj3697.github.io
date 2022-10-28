@@ -49,18 +49,6 @@ const Skills = () => {
         </div>
         <div className="singleSkills">
           <div className="iconBox flex">
-            <SiChakraui className='icon' />
-          </div>
-          <span className="skillName">ChakraUI</span>
-        </div>
-        <div className="singleSkills">
-          <div className="iconBox flex">
-            <SiBootstrap className='icon' />
-          </div>
-          <span className="skillName">Bootstrap</span>
-        </div>
-        <div className="singleSkills">
-          <div className="iconBox flex">
             <IoLogoSass className='icon' />
           </div>
           <span className="skillName">Sass</span>
@@ -138,6 +126,18 @@ const Skills = () => {
             <IoLogoWordpress className='icon' />
           </div>
           <span className="skillName">Wordpress</span>
+        </div>
+        <div className="singleSkills">
+          <div className="iconBox flex">
+            <SiChakraui className='icon' />
+          </div>
+          <span className="skillName">ChakraUI</span>
+        </div>
+        <div className="singleSkills">
+          <div className="iconBox flex">
+            <SiBootstrap className='icon' />
+          </div>
+          <span className="skillName">Bootstrap</span>
         </div>
       </div>
       </div>
