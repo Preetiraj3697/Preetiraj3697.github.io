@@ -77,11 +77,11 @@ const Contact = () => {
         </div>
         <div className="form grid">
           <h3>Send me an email</h3>
-          <form ref={form} onSubmit={sendEmail}>
-            <input type="text" placeholder='Enter your name' name='from_name' />
-            <input type="email" placeholder='Enter your Email' email='email'/>
-            <textarea name="message" id="" placeholder='Enter your message'></textarea>
-            <button className='formBtn' type='submit' name="submit">Send Email</button>
+          <form action="https://formspree.io/f/xdojzzlj" method="POST" className="contact-inputs">
+            <input type="text" placeholder="username" name="username" autoComplete="off"  required />
+            <input type="email" placeholder="Enter Email" name="email" autoComplete="off"  required/>
+            <textarea name="message" cols="30" rows="10" required autoComplete="off" placeholder="Enter Your Message"></textarea>
+            <button className='formBtn' type="submit" value="Send">Send Email</button>
           </form>
         </div>
       </div>

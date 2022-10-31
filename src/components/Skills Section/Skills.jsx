@@ -2,8 +2,10 @@ import React from 'react'
 import { TbBrandReactNative } from 'react-icons/tb'
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs, IoLogoSass, IoLogoWordpress } from 'react-icons/io'
 import './skills.css'
+import GitHubCalendar from 'react-github-calendar';
 import { AiFillGithub, AiFillGitlab, AiFillHtml5 } from 'react-icons/ai'
-import {SiBootstrap, SiChakraui, SiExpress, SiFigma, SiMongodb, SiRedux, SiStyledcomponents, SiTailwindcss} from 'react-icons/si'
+import {GrMysql} from 'react-icons/gr'
+import {SiBootstrap, SiChakraui, SiCypress, SiExpress, SiFigma, SiMongodb, SiRedux, SiStyledcomponents, SiTailwindcss} from 'react-icons/si'
 const Skills = () => {
   return (
     <section id="skills" className='skills container section'>
@@ -37,15 +39,9 @@ const Skills = () => {
         </div>
         <div className="singleSkills">
           <div className="iconBox flex">
-            <SiTailwindcss className='icon' />
-          </div>
-          <span className="skillName">Tailwind</span>
-        </div>
-        <div className="singleSkills">
-          <div className="iconBox flex">
             <SiStyledcomponents className='icon' />
           </div>
-          <span className="skillName">StyledC.</span>
+          <span className="skillName">Styled<br></br>Component</span>
         </div>
         <div className="singleSkills">
           <div className="iconBox flex">
@@ -65,12 +61,7 @@ const Skills = () => {
           </div>
           <span className="skillName">React</span>
         </div>
-        <div className="singleSkills">
-          <div className="iconBox flex">
-            <SiRedux className='icon' />
-          </div>
-          <span className="skillName">Redux</span>
-        </div>
+        
       </div>
       </div>
       <div className="skillGroup">
@@ -78,6 +69,12 @@ const Skills = () => {
           <h2 className="title">BackEnd</h2>
         </div>
         <div className="generalSkills">
+        <div className="singleSkills">
+          <div className="iconBox flex">
+            <SiRedux className='icon' />
+          </div>
+          <span className="skillName">Redux</span>
+        </div>
         <div className="singleSkills">
           <div className="iconBox flex">
             <IoLogoNodejs className='icon' />
@@ -95,6 +92,18 @@ const Skills = () => {
             <SiMongodb className='icon' />
           </div>
           <span className="skillName">MongoDB</span>
+        </div>
+        <div className="singleSkills">
+          <div className="iconBox flex">
+            <SiCypress className='icon' />
+          </div>
+          <span className="skillName">Cypress</span>
+        </div>
+        <div className="singleSkills">
+          <div className="iconBox flex">
+            <GrMysql className='icon' />
+          </div>
+          <span className="skillName">Mysql</span>
         </div>
       </div>
       </div>
@@ -142,7 +151,24 @@ const Skills = () => {
       </div>
       </div>
       </div>
-      
+      <br></br>
+      <div class="education">
+        <h1>Preeti Raj Github Statistics</h1>
+        <div class="cal-con">
+            <div class="calendar">
+            <GitHubCalendar username="Preetiraj3697" year={new Date().getFullYear()}  blockMargin={7}
+            //  blockRadius={5}
+            //  blockSize={20}
+            //  fontSize={34}
+             color="#00eaff" 
+             responsive={true}/>
+            </div>
+        </div>
+        <div class="stats">
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=Preetiraj3697&theme=algolia&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" />
+        </div>
+    </div>
   </section>
   )
 }

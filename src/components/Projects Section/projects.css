@@ -66,8 +66,10 @@
   justify-content: flex-end;
 }
 .projects .projectContainer .technologies small {
-  color: var(--secondaryColor);
+  color: var(--primaryColor);
   font-weight: 600;
+  font-size:15px;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 600px) {
