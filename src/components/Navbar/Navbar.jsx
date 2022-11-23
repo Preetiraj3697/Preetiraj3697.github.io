@@ -43,7 +43,7 @@ const Navbar = () => {
                 <a href="#contact" className="navLink"><span className='headerNumber'></span> Contact</a>
             </li>
             <button className='btn'>
-             <a href='doc.pdf' download='doc.pdf'>Resume</a>
+             <a href='Preeti_Raj_Resume.pdf' download='Preeti_Raj_Resume.pdf'>Resume</a>
             </button>
         </ul>
         <div onClick={removeNavBar} className="closeNavBar">
