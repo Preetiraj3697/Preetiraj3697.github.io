@@ -31,6 +31,9 @@ const Navbar = () => {
      <div className={active}>
         <ul onClick={removeNavBar} className="navLists">
             <li className="navItem">
+                <a href="#home" className="navLink"><span className='headerNumber'></span>Home</a>
+            </li>
+            <li className="navItem">
                 <a href="#about" className="navLink"><span className='headerNumber'></span> About</a>
             </li>
             <li className="navItem">

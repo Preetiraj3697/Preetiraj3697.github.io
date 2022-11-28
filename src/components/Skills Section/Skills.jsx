@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <section id="skills" className='skills container section'>
       <div className="sectionTitle">
-        <span className="titleNumber">02</span>
+        <span className="titleNumber"></span>
         <h5 className="titleText">
           Skills
           <div className="underline">
@@ -152,16 +152,16 @@ const Skills = () => {
         </div>
       </div>
       <br></br>
-      <div class="education">
+      <div className="education">
         <h1>Preeti Raj Github Statistics</h1>
-        <div class="cal-con">
-          <div class="calendar">
+        <div className="cal-con">
+          <div className="calendar">
             <GitHubCalendar username="Preetiraj3697" year={new Date().getFullYear()} blockMargin={7}
               color="#00eaff"
               responsive={true} />
           </div>
           <div><a href="https://github.com/Preetiraj3697/github-readme-activity-graph"><img alt="Preetiraj3697 Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=Preetiraj3697&bg_color=050f2c&color=2ddd98&line=5BCDEC&point=FFFFFF&hide_border=false&show_icons=true&radius=10&area=true&area_color=2ddd98&border=3" /></a></div>
-          <div class="stats">
+          <div className="stats">
             
             <img
               src="https://github-readme-stats.vercel.app/api?username=Preetiraj3697&theme=algolia&hide_border=false&include_all_commits=true&count_private=false&show_icons=true" />

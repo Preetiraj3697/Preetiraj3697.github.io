@@ -25,8 +25,8 @@ const data = [
   {
     id:2,
     image:img2,
-    demo:'https://github.com/Preetiraj3697/sheela-commerce-webiste-with-reactjs',
-    liveLink:'https://github.com/Preetiraj3697/sheela-commerce-webiste-with-reactjs',
+    demo:'https://sheela-ecommerce-website.vercel.app/',
+    liveLink:'https://sheela-ecommerce-website.vercel.app/',
     github:'https://github.com/Preetiraj3697/sheela-commerce-webiste-with-reactjs',
     title:'E-commerce Website',
     desc:'This website name is my mom name. Its an eCommerce app inspired by Amazon, a sample website built to demonstrate the use of Modern Web development tools',
@@ -87,7 +87,7 @@ const Projects = () => {
   return (
     <section id="projects" className='projects container section'>
     <div className="sectionTitle">
-        <span className="titleNumber">03</span>
+        <span className="titleNumber"></span>
         <h5 className="titleText">
           Projects
           <div className="underline">
