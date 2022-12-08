@@ -1,20 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.9abc15d4.css",
-    "main.js": "/static/js/main.42e5e3c9.js",
+    "main.js": "/static/js/main.cc3ff27b.js",
+    "static/media/weather.png": "/static/media/weather.1f8bb79a8a625a5c69e0.png",
+    "static/media/Himalaya.png": "/static/media/Himalaya.02aa15333ad89c957c82.png",
     "static/media/Home.png": "/static/media/Home.6826081d5aa3fe3f7ea6.png",
     "static/media/Image2.png": "/static/media/Image2.7af0fc0d88f6c94e7d22.png",
     "static/media/30day.png": "/static/media/30day.32be057135229196465b.png",
     "static/media/TodoList.png": "/static/media/TodoList.01ffb9d2affafb18cc58.png",
     "static/media/Tictoetak.png": "/static/media/Tictoetak.ac98d96ca807536f98ee.png",
+    "static/media/Foods.png": "/static/media/Foods.a1ee2f8f4d69d988aeff.png",
     "static/media/Recipe.png": "/static/media/Recipe.769b1e44b15c0391203b.png",
     "static/media/TypingSpeed.png": "/static/media/TypingSpeed.b39d9ae073f15fa2b943.png",
     "index.html": "/index.html",
     "main.9abc15d4.css.map": "/static/css/main.9abc15d4.css.map",
-    "main.42e5e3c9.js.map": "/static/js/main.42e5e3c9.js.map"
+    "main.cc3ff27b.js.map": "/static/js/main.cc3ff27b.js.map"
   },
   "entrypoints": [
     "static/css/main.9abc15d4.css",
-    "static/js/main.42e5e3c9.js"
+    "static/js/main.cc3ff27b.js"
   ]
 }
