@@ -35,7 +35,7 @@ const data = [
     desc:'This website name is my mom name. Its an eCommerce app inspired by Amazon.',
     tech1:'React',
     tech2:'Router',
-    tech3:'Styled Component',
+    tech3:'StyledComponent',
   },
   {
     id:3,
