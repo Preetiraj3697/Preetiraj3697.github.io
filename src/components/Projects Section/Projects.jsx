@@ -161,10 +161,13 @@ const Projects = () => {
                <div className="desc">
                 {desc}
                </div>
-               <div className="technologies flex">
+               <div className="technologies flex" style={{textAlign:'left'}}>
                 <small>{tech1}</small>
                 <small>{tech2}</small>
                 <small>{tech3}</small>
+               </div>
+               <div style={{display:'flex',justifyContent:"space-between",marginTop:'20px',marginBottom:'10px'}}><div><a href={liveLink} target='_blank'><button className='btn'>Live</button></a></div>
+               <div><a href={github} target='_blank'><button className='btn'>GitHub</button></a></div>
                </div>
               </div>
             )

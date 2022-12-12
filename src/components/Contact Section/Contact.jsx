@@ -1,5 +1,5 @@
-import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
-import { TbArrowBigRightLines } from 'react-icons/tb'
+import { AiFillGithub, AiFillLinkedin, AiFillMobile, AiOutlineInstagram } from 'react-icons/ai'
+import { TbArrowBigRightLines, TbArrowBigUpLines } from 'react-icons/tb'
 import './contact.css'
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -70,6 +70,20 @@ const Contact = () => {
               <div>
                 <a href="https://www.instagram.com/paarthavshah3697/" className='flex' target="_blank">
                   Send Message<TbArrowBigRightLines className='icon'/>
+                </a>
+              </div>
+            </div>
+            <div className="card">
+              <div>
+                <AiFillMobile className='icon'/>
+              </div>
+              <h4>Mobile Number</h4>
+              <span className="userName">
+                8448206862
+              </span>
+              <div>
+                <a href="#" className='flex' target="_blank">
+                  Call Me<TbArrowBigUpLines className='icon'/>
                 </a>
               </div>
             </div>
