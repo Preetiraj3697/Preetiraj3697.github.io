@@ -20,7 +20,7 @@ const data = [
     liveLink:'https://30dayofjavascript.netlify.app/',
     github:'https://github.com/Preetiraj3697/30dayofJavascript',
     title:'30DayofJavaScript',
-    desc:'About 30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript programming language in 30 days.',
+    desc:'About 30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript.',
     tech1:'Html',
     tech2:'CSS',
     tech3:'JavaScript',
@@ -32,7 +32,7 @@ const data = [
     liveLink:'https://sheela-ecommerce-website.vercel.app/',
     github:'https://github.com/Preetiraj3697/sheela-commerce-webiste-with-reactjs',
     title:'E-commerce Website',
-    desc:'This website name is my mom name. Its an eCommerce app inspired by Amazon, a sample website built to demonstrate the use of Modern Web development tools',
+    desc:'This website name is my mom name. Its an eCommerce app inspired by Amazon.',
     tech1:'React',
     tech2:'Router',
     tech3:'Styled Component',
@@ -142,14 +142,6 @@ const Projects = () => {
           })=>{
             return(
               <div key={id} className="singleProject">
-               <div className="externalLinks flex">
-                <div className="youtubeIcon">
-                  <a href={demo} target='_blank'><VscLiveShare className='icon'/></a>
-                </div>
-                <div className="githubIcon">
-                <a href={github} target='_blank'><FiGithub className='icon'/></a>
-                </div>
-               </div>
                <div className="imgDiv">
                 <a href={liveLink} target='_blank'>
                   <img src={image} alt="title" />
@@ -161,13 +153,14 @@ const Projects = () => {
                <div className="desc">
                 {desc}
                </div>
-               <div className="technologies flex" style={{textAlign:'left'}}>
-                <small>{tech1}</small>
-                <small>{tech2}</small>
-                <small>{tech3}</small>
+               <div className="technologies flex">
+                <div>{tech1}</div>
+                <div>{tech2}</div>
+                <div>{tech3}</div>
                </div>
-               <div style={{display:'flex',justifyContent:"space-between",marginTop:'20px',marginBottom:'10px'}}><div><a href={liveLink} target='_blank'><button className='btn'>Live</button></a></div>
-               <div><a href={github} target='_blank'><button className='btn'>GitHub</button></a></div>
+               <div className="externalLinks flex" style={{display:'flex',justifyContent:"space-between",marginTop:'20px',marginBottom:'10px'}}>
+                <div><a href={liveLink} target='_blank'><button className="btn externalLinks flex" style={{gap:"8px"}}><VscLiveShare className='icon'/>Live</button></a></div>
+               <div><a href={github} target='_blank'><button className="btn externalLinks flex" style={{gap:"8px"}}><FiGithub className='icon'/>GitHub</button></a></div>
                </div>
               </div>
             )

@@ -16,6 +16,7 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
+
 .projects .projectContainer .singleProject {
   display: grid;
   gap: 0.5rem;
@@ -24,20 +25,25 @@
   height: 100%;
   background: var(--projectCardColor);
 }
+
 .projects .projectContainer .singleProject .externalLinks {
   width: 100%;
   justify-content: space-between;
 }
+
 .projects .projectContainer .singleProject .youtubeIcon .githubIcon a {
   color: var(--primaryColor);
 }
+
 .projects .projectContainer .singleProject .youtubeIcon .githubIcon a:hover {
   color: var(--primaryHover);
 }
+
 .projects .projectContainer .singleProject:hover {
   transform: translateY(-7px);
   border-bottom: 2px solid var(--primaryColor);
 }
+
 .projects .projectContainer .imgDiv {
   height: 170px;
   width: auto;
@@ -45,31 +51,36 @@
   overflow: hidden;
   cursor: pointer;
 }
+
 .projects .projectContainer .imgDiv img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
 }
+
 .projects .projectContainer .projectTitle {
   display: flex;
   font-weight: 600;
   color: var(--textColor);
 }
+
 .projects .projectContainer .desc {
   font-weight: 600;
-  color: var(--secondaryColor);
+  color: var(--textColor);
 }
+
 .projects .projectContainer .technologies {
   gap: 0.5rem;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
-.projects .projectContainer .technologies small {
+
+.projects .projectContainer .technologies div {
   color: var(--primaryColor);
-  font-weight: 600;
-  font-size:15px;
-  text-decoration: underline;
+  font-weight: 800;
+  font-size: 18px;
+  background-color: 1px solid var(--primaryColor);
 }
 
 @media screen and (min-width: 600px) {
@@ -106,4 +117,4 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}/*# sourceMappingURL=projects.css.map */
+} /*# sourceMappingURL=projects.css.map *//*# sourceMappingURL=projects.css.map */

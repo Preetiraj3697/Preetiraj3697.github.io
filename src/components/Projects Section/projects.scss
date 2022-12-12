@@ -59,17 +59,17 @@
   }
   .projects .projectContainer .desc {
     font-weight: 600;
-    color: var(--secondaryColor);
+    color: var(--textColor);
   }
   .projects .projectContainer .technologies {
     gap: 0.5rem;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
-  .projects .projectContainer .technologies small {
+  .projects .projectContainer .technologies div {
     color: var(--primaryColor);
-    font-weight: 600;
-    font-size:15px;
-    text-decoration: underline;
+    font-weight: 800;
+    font-size:18px;
+    background-color:1px solid var(--primaryColor)
   }
   
   @media screen and (min-width: 600px) {
