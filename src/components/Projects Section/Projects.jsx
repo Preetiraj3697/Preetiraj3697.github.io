@@ -158,7 +158,7 @@ const Projects = () => {
                 <div>{tech2}</div>
                 <div>{tech3}</div>
                </div>
-               <div className="externalLinks flex" style={{display:'flex',justifyContent:"space-between",marginTop:'20px',marginBottom:'10px'}}>
+               <div className="externalLinks flex" style={{display:'flex',gap:"20px",marginTop:'10px',marginBottom:'10px'}}>
                 <div><a href={liveLink} target='_blank'><button className="btn externalLinks flex" style={{gap:"8px"}}><VscLiveShare className='icon'/>Live</button></a></div>
                <div><a href={github} target='_blank'><button className="btn externalLinks flex" style={{gap:"8px"}}><FiGithub className='icon'/>GitHub</button></a></div>
                </div>
