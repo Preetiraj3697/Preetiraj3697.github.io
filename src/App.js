@@ -7,16 +7,18 @@ import Home from './components/Home Section/Home';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects Section/Projects';
 import Skills from './components/Skills Section/Skills';
+import GoToTop from './components/GoToTop';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
-        <About/>
+       <Navbar/>
+       <Home/>
+       <About/>
        <Skills/>
        <Projects/>
        <Contact/>
+       <GoToTop />
        <Footer/> 
 
     </div>

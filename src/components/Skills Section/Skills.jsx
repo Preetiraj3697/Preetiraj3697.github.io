@@ -5,7 +5,7 @@ import './skills.css'
 import GitHubCalendar from 'react-github-calendar';
 import { AiFillGithub, AiFillGitlab, AiFillHtml5 } from 'react-icons/ai'
 import { GrMysql } from 'react-icons/gr'
-import { SiBootstrap, SiChakraui, SiCypress, SiExpress, SiFigma, SiMongodb, SiRedux, SiStyledcomponents, SiTailwindcss } from 'react-icons/si'
+import { SiBootstrap, SiChakraui, SiCypress, SiExpress, SiFigma, SiMongodb, SiRedux, SiStyledcomponents} from 'react-icons/si'
 const Skills = () => {
   return (
     <section id="skills" className='skills container section'>
@@ -163,7 +163,7 @@ const Skills = () => {
           {/* <div><a href="https://github.com/Preetiraj3697/github-readme-activity-graph"><img alt="Preetiraj3697 Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=Preetiraj3697&bg_color=050f2c&color=2ddd98&line=5BCDEC&point=FFFFFF&hide_border=false&show_icons=true&radius=10&area=true&area_color=2ddd98&border=3" /></a></div> */}
           <div className="stats">
             <img
-              src="https://github-readme-stats.vercel.app/api?username=Preetiraj3697&theme=algolia&hide_border=false&include_all_commits=true&count_private=false&show_icons=true" />
+              src="https://github-readme-stats.vercel.app/api?username=Preetiraj3697&theme=algolia&hide_border=false&include_all_commits=true&count_private=false&show_icons=true" alt="gitimage"/>
           </div>
         </div>
 
