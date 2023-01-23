@@ -23,7 +23,12 @@ const Home = () => {
         </div>
       </div>
       {/* HomeContent */}
-      
+      <div class="background">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
       <div className="container homeContainer">
         <span className="introText">
           Hi my name is,
@@ -66,6 +71,7 @@ const Home = () => {
           </div>
 
         </div>
+      </div>
       </div>
       {/* right div with email address (will also be visible) at wider screen*/}
      
