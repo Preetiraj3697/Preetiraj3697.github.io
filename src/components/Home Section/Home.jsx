@@ -3,6 +3,7 @@ import './home.css'
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 import { TbArrowBigRightLines } from 'react-icons/tb'
 import {FiChevronsDown} from 'react-icons/fi'
+import Typed from "react-typed"
 const Home = () => {
   return (
     <section id="home" className='home section'>
@@ -22,18 +23,35 @@ const Home = () => {
         </div>
       </div>
       {/* HomeContent */}
+      
       <div className="container homeContainer">
         <span className="introText">
           Hi my name is,
         </span>
         <h1 className='title'>
-          Preeti Raj
+        𝐏𝐫𝐞𝐞𝐭𝐢 𝐑𝐚𝐣
         </h1>
         <span className='subTitle'>
-        I develope scalable web based applications and software.
+        <Typed
+      strings={[
+            "I'm a Full Stack Developer",
+            "I develope scalable web based applications and software.",
+          ]}
+          typeSpeed={100}
+          backSpeed={200}
+          loop
+        />
+        {/* I develope scalable web based applications and software. */}
         </span>
         <p className="homeParagraph">
-          I code within Required coding standards and styles to serve the exact need.
+        <Typed
+      strings={[
+            "I code within Required coding standards and styles to serve the exact need.",
+          ]}
+          typeSpeed={100}
+          backSpeed={200}
+          loop
+        />
         </p>
         <div className="lowerHomeSection">
           <button className="contactBtn">

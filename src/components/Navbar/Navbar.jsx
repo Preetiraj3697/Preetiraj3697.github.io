@@ -25,7 +25,7 @@ const Navbar = () => {
        <header className={activeHeader}>
      <div className="logoDiv">
         <h1 className='logo'>
-        <a href='#home'>PR.</a>
+        <a href='#home'>𝐏𝐫𝐞𝐞𝐭𝐢 𝐑𝐚𝐣</a>
         </h1>
      </div>
      <div className={active}>
