@@ -3,7 +3,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <section id="footer" className='footer'>
-      <span>Developed by Preeti Raj 2022 | All rights reserved</span>
+      <span>Developed by Preeti Raj 2022 | It's inspired by many YouTube videos.</span>
   </section>
   )
 }
