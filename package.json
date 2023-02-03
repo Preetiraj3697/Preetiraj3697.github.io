@@ -13,6 +13,7 @@
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.3.4",
     "react-icons": "^4.6.0",
+    "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
     "react-typed": "^1.2.0",
     "styled-components": "^5.3.6",

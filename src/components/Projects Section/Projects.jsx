@@ -10,20 +10,20 @@ import img5 from '../../Assets/TodoList.png'
 import img6 from '../../Assets/TypingSpeed.png'
 import img7 from '../../Assets/weather.png'
 import img8 from '../../Assets/Foods.png'
-import img9 from '../../Assets/Himalaya.png'
+import img9 from '../../Assets/Dharma.png'
 
 const data = [
   {
-    id:1,
-    image:img1,
-    demo:'https://30dayofjavascript.netlify.app/',
-    liveLink:'https://30dayofjavascript.netlify.app/',
-    github:'https://github.com/Preetiraj3697/30dayofJavascript',
-    title:'30DayofJavaScript',
-    desc:'About 30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript.',
-    tech1:'Html',
-    tech2:'CSS',
-    tech3:'JavaScript',
+    id:9,
+    image:img9,
+    demo:'https://dharma-lyart.vercel.app/',
+    liveLink:'https://dharma-lyart.vercel.app/',
+    github:'https://github.com/Preetiraj3697/Dharma',
+    title:'Dharma OTT Website',
+    desc:'Its a Ott platform. inspired by Netflix. In this website user search, sort and watch our favourite movies.',
+    tech1:'React',
+    tech2:'Redux',
+    tech3:'Sass',
   },
   {
     id:2,
@@ -36,6 +36,43 @@ const data = [
     tech1:'React',
     tech2:'Router',
     tech3:'StyledComponent',
+  },
+  {
+    
+    id:7,
+    image:img7,
+    demo:'https://weatherappbypreetiraj.netlify.app/',
+    liveLink:'https://weatherappbypreetiraj.netlify.app/',
+    github:'https://github.com/Preetiraj3697/Weather_App-',
+    title:'Weather Web App',
+    desc:'This weather app is one of best free weather apps.Forecastle: Forecast now, hourly forecast and daily forecast.',
+    tech1:'React',
+    tech2:'Axios',
+    tech3:'CSS',
+  },
+  {
+    id:8,
+    image:img8,
+    demo:'https://prismatic-gumdrop-ff8cbd.netlify.app/home',
+    liveLink:'https://prismatic-gumdrop-ff8cbd.netlify.app/home',
+    github:'https://github.com/Preetiraj3697/Food-Develivery-Website',
+    title:'Tasty Treat',
+    desc:'This website inspired by Zomato, a sample website built to demonstrate the use of Modern Web development tools.',
+    tech1:'React',
+    tech2:'Redux',
+    tech3:'Bootstrap',
+  },
+  {
+    id:1,
+    image:img1,
+    demo:'https://30dayofjavascript.netlify.app/',
+    liveLink:'https://30dayofjavascript.netlify.app/',
+    github:'https://github.com/Preetiraj3697/30dayofJavascript',
+    title:'30DayofJavaScript',
+    desc:'About 30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript.',
+    tech1:'Html',
+    tech2:'CSS',
+    tech3:'JavaScript',
   },
   {
     id:3,
@@ -84,42 +121,7 @@ const data = [
     tech2:'CSS',
     tech3:'JavaScript',
   },
-  {
-    id:7,
-    image:img7,
-    demo:'https://weatherappbypreetiraj.netlify.app/',
-    liveLink:'https://weatherappbypreetiraj.netlify.app/',
-    github:'https://github.com/Preetiraj3697/Weather_App-',
-    title:'Weather Web App',
-    desc:'This weather app is one of best free weather apps.Forecastle: Forecast now, hourly forecast and daily forecast.',
-    tech1:'React',
-    tech2:'Axios',
-    tech3:'CSS',
-  },
-  {
-    id:8,
-    image:img8,
-    demo:'https://prismatic-gumdrop-ff8cbd.netlify.app/home',
-    liveLink:'https://prismatic-gumdrop-ff8cbd.netlify.app/home',
-    github:'https://github.com/Preetiraj3697/Food-Develivery-Website',
-    title:'Tasty Treat',
-    desc:'This website inspired by Zomato, a sample website built to demonstrate the use of Modern Web development tools.',
-    tech1:'React',
-    tech2:'Redux',
-    tech3:'Bootstrap',
-  },
-  {
-    id:9,
-    image:img9,
-    demo:'https://stellar-semolina-30fced.netlify.app/',
-    liveLink:'https://stellar-semolina-30fced.netlify.app/',
-    github:'https://github.com/Preetiraj3697/nondescript-alarm-2844',
-    title:'Himalayas Website Clone',
-    desc:'This is clone of Himalaya Website, a sample website built to demonstrate the use of Modern Web development tools.',
-    tech1:'Html',
-    tech2:'CSS',
-    tech3:'JavaScript',
-  },
+
 ]
 const Projects = () => {
 

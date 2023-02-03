@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import {AiFillCloseCircle, AiOutlineDownload} from 'react-icons/ai'
-import {TbGridDots} from 'react-icons/tb'
+import {TbCloudDownload, TbGridDots} from 'react-icons/tb'
 const Navbar = () => {
     const [active, setActive] = useState('navBar');
     const showNavBar = () => {
@@ -45,12 +45,13 @@ const Navbar = () => {
             <li className="navItem">
                 <a href="#contact" className="navLink"><span className='headerNumber'></span> Contact</a>
             </li>
-            <a href='https://drive.google.com/file/d/1hDfJLp-qLVxQHJFq16I3Yvr5mkE8qVaD/view?usp=share_link' target="_blank" style={{"cursor":"pointer"}}>
-            <button className='btn'>
-            Resume
-            <a href='Preeti-Raj-Resume.pdf' download='Preeti-Raj-Resume.pdf'><AiOutlineDownload style={{"margin":"0px 3px"}}/></a>
+            <a href="Preeti-Raj-Resume.pdf" download="Preeti-Raj-Resume.pdf">
+            <button className="btn" style={{"display":"flex","cursor":"pointer"}}>
+            <TbCloudDownload style={{"marginRight":"6px"}}/>Resume
             </button>
-             </a>
+            </a>
+            
+             
         </ul>
         <div onClick={removeNavBar} className="closeNavBar">
         <AiFillCloseCircle className='icon'/>
