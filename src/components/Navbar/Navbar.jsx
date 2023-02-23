@@ -45,7 +45,7 @@ const Navbar = () => {
             <li className="navItem">
                 <a href="#contact" className="navLink"><span className='headerNumber'></span> Contact</a>
             </li>
-            <a href="Preeti-Raj-Resume.pdf" download="Preeti-Raj-Resume.pdf">
+            <a href="fw20_0558-Preeti-Raj-Resume.pdf" download="fw20_0558-Preeti-Raj-Resume.pdf">
             <button className="btn" style={{"display":"flex","cursor":"pointer"}}>
             <TbCloudDownload style={{"marginRight":"6px"}}/>Resume
             </button>

@@ -28,7 +28,7 @@ const About = () => {
             result orietend.
           </h4>
           <div className="aboutBtn">
-            <a href="Preeti-Raj-Resume.pdf" download="Preeti-Raj-Resume.pdf" className="flex">
+            <a href="fw20_0558-Preeti-Raj-Resume.pdf" download="fw20_0558-Preeti-Raj-Resume.pdf" className="flex">
               Download CV <TbCloudDownload className='icon'/>
             </a>
           </div>
